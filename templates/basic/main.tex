@@ -1,10 +1,29 @@
 \documentclass[a4paper,11pt]{scrartcl}
 
+\title{Document Title}
+\author{Lucas van der Togt}
+
 \input{content/00_preamble.tex}
 
 
 \begin{document}
 
+\maketitle
+
+
+% cover and contents pages
+\pagenumbering{roman}
+\tableofcontents
+\cleardoublepage
+
+
+% main content
+\pagenumbering{arabic}
 \input{content/01_section01.tex}
+
+
+% references
+\bibliographystyle{plain}
+\bibliography{bibliography}
 
 \end{document}
